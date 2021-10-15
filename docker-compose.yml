@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    image: coref-api-1
+    build: .
+    command: poetry run uvicorn coref_api.main:app --host 0.0.0.0
+    volumes:
+      - .:/main
+    ports:
+      - 8008:8000
