@@ -28,4 +28,4 @@ def coref(text: TextIn = Body(...)):
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app")
+    uvicorn.run("coref_api.main:app")
